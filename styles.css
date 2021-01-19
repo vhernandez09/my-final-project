@@ -1,0 +1,32 @@
+.col-sm {
+  color: black;
+  font-size: 14px;
+}
+
+.col-sm:hover {
+  color: lightseagreen;
+}
+
+body {
+  background: lightcyan;
+}
+
+input {
+  color: black;
+  background-color: whitesmoke;
+  opacity: 0.8;
+}
+
+h3,
+h4 {
+  color: black;
+  font-style: italic;
+}
+
+h2 {
+  color: black;
+}
+
+.card {
+  background-color: white;
+}
