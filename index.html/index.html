@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<link rel="stylesheet" href="src/styles.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+<body>
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                New York City
+            </div>
+            <div class="col-sm">
+                Los Angeles
+            </div>
+            <div class="col-sm">
+                Atlanta
+            </div>
+        </div>
+        <br />
+        <br />
+        <form id="search-form">
+            <input type="text" id="city-input" placeholder="Search your city..." />
+            <input type="submit" id="search-button" value="Search" />
+            <button type="button" id="current-button">Current</button>
+        </form>
+
+        <h3>Updated City</h3>
+        <h4>Current Date</h4>
+        <h2>30℉</h2>
+
+        <br />
+        <br />
+        <h4>Next 5 Day Forecast</h4>
+
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Friday</h5>
+                    <p class="card-text">Partly Cloudy. High:31℉ / Low: 15℉.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Saturday</h5>
+                    <p class="card-text">Partly Cloudy. High:31℉ / Low: 24℉</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Sunday</h5>
+                    <p class="card-text">Scattered Showers. High: 37℉ / Low: 33℉</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Monday</h5>
+                    <p class="card-text">Mostly Cloudy. High: 38℉ / Low: 35℉</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tuesday</h5>
+                    <p class="card-text">Partly Cloudy. High: 40℉ / Low: 29℉</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>
