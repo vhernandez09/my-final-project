@@ -35,16 +35,25 @@ let year = time.getFullYear();
 
 let hour = time.getHours();
 if (hour < 10) {
-  hour = `0${hour}`;
+  hour = `0${hour}`
 }
+if (hour <12) {
+  midday = "AM"
+} else { midday = "PM"}
+if (hour > 12) {
+  hour = `${hour}` - 12
+}
+
 
 let minutes = time.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 
+
 let currentDate = document.querySelector("h4");
-currentDate.innerHTML = `${day} ${month} ${date}, ${year} ${hour}:${minutes}`;
+currentDate.innerHTML = `${day} ${month} ${date}, ${year} ${hour}:${minutes} ${midday}`;
+
 
 function showTemperature(response) {
   let cityHeader = document.querySelector("h3");
@@ -52,6 +61,13 @@ function showTemperature(response) {
   let temp = `${Math.round(response.data.main.temp)}`;
   let tempHeader = document.querySelector("h2");
   tempHeader.innerHTML = `${temp}°F`;
+  let realFeel = `${Math.round(response.data.main.feels_like)}`;
+  let feelsLike = document.querySelector("h5");
+  feelsLike.innerHTML = `Feels like: ${realFeel}°F`;
+  let description = document.querySelector("h6");
+  description.innerHTML = `${response.data.weather[0].description}`;
+  let icon = document.querySelector("#icon");
+  icon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
 function showLocation(position) {

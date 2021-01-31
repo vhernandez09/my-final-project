@@ -1,33 +1,48 @@
-.col-sm {
-  color: black;
-  font-size: 14px;
-}
-
-.col-sm:hover {
-  color: lightseagreen;
-}
-
 body {
-  background: blue;
+  background: white;
 }
 
 input {
-  color: black;
+  color: #458bb8;
   background-color: whitesmoke;
   opacity: 0.8;
 }
 
-h3,
-h4,
-h6 {
-  color: black;
+.conditions-content {
+  color: #458bb8;
   font-style: italic;
+  font-family: "Raleway", sans-serif;
+  opacity: 1;
+}
+
+.p {
+  text-transform: uppercase;
+  text-decoration: lightskyblue;
+  text-align: center;
+}
+h6 {
+  text-transform: uppercase;
+  text-align: left;
 }
 
 h2 {
-  color: black;
+  color: #458bb8;
+  font-family: "Raleway", sans-serif;
 }
 
-.card {
-  background-color: white;
+.weather-app-wrapper {
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  border: 2px solid lightgray;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 0px auto;
+  line-height: 5px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: block;
+  text-align: left;
+  font-size: medium;
+  background-origin: border-box;
 }
