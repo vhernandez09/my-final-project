@@ -1,5 +1,6 @@
 body {
   background: white;
+  text-align: center;
 }
 
 input {
@@ -10,16 +11,18 @@ input {
 
 .conditions-content {
   color: #458bb8;
-  font-style: italic;
-  font-family: "Raleway", sans-serif;
+  font-family: "Questrial", sans-serif;
   opacity: 1;
 }
 
 .p {
+  display: inline-block;
+  margin: 0px auto;
   text-transform: uppercase;
   text-decoration: lightskyblue;
   text-align: center;
 }
+
 h6 {
   text-transform: uppercase;
   text-align: left;
@@ -27,7 +30,7 @@ h6 {
 
 h2 {
   color: #458bb8;
-  font-family: "Raleway", sans-serif;
+  font-family: "Questrial", sans-serif;
 }
 
 .weather-app-wrapper {
@@ -39,8 +42,8 @@ h2 {
   line-height: 5px;
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
   display: block;
   text-align: left;
   font-size: medium;
