@@ -28,6 +28,10 @@ h6 {
   text-align: left;
 }
 
+h4 {
+  font-style: italic;
+  font-size: 14px;
+}
 h2 {
   color: #458bb8;
   font-family: "Questrial", sans-serif;
@@ -48,4 +52,8 @@ h2 {
   text-align: left;
   font-size: medium;
   background-origin: border-box;
+}
+
+li {
+  list-style: none;
 }

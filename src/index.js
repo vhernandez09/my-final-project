@@ -52,7 +52,7 @@ if (minutes < 10) {
 
 
 let currentDate = document.querySelector("h4");
-currentDate.innerHTML = `${day} ${month} ${date}, ${year} ${hour}:${minutes} ${midday}`;
+currentDate.innerHTML = `Last updated: ${day} ${month} ${date}, ${year} ${hour}:${minutes} ${midday}`;
 
 
 function showTemperature(response) {
@@ -68,6 +68,10 @@ function showTemperature(response) {
   description.innerHTML = `${response.data.weather[0].description}`;
   let icon = document.querySelector("#icon");
   icon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  let humidity = document.querySelector(".humidity");
+  humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
+  let wind = document.querySelector(".wind");
+  wind.innerHTML = `Wind Speed: ${Math.round(response.data.wind.speed)} km/h`;
 }
 
 function showLocation(position) {
