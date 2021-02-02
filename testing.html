@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vane's Weather App</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/styles.css" />
+<body>
+    <br />
+        <br />
+        <br />
+        <div class="container">
+            <div class="weather-app-wrapper">
+                <div class="weather-app">
+        <form id="search-form">
+            <input type="text" id="city-input" placeholder="Search your city..." />
+            <input class="btn btn-primary" type="submit" value="🔍 Search for..">
+            <button type="button" id="current-button" class="btn btn-outline-info"> Locate my City📍</button>
+        </form>
+        <div class="row">
+            <div class="col">
+                <h3>Your City</h3>
+                <h2>30°F</h2>
+                </div>
+                </div>
+        <div class="conditions-box">
+           <div class="conditions-contentrow">
+                   <div class="col-6">
+        <h5>Feels like: °F</h5>
+        <h6>description<h6>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" id="icon" width="100" alt="weather-icon" />
+        </div>
+        <div class="col-6">
+        <ul>
+            <li class="humidity"> Humidity: 68%</li>
+            <li class="wind"> Wind speed: 4km/h</li>
+        </ul>
+        </div>
+            </div>
+            </div>
+    <div class="row">
+        <div class="col">
+        <h4>Last modified:</h4>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <br />
+        <br />
+   
+    <script src="src/index.js"></script>
+    <p><a href="https://github.com/vhernandez09/my-final-project">Open-source code</a> by Vanessa Hernandez </p>
+</body>
+
+</html>
