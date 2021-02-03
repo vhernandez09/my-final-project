@@ -3,6 +3,7 @@ body {
   text-align: center;
   color: #458bb8;
   font-family: "Questrial", sans-serif;
+  line-height: 5px;
 }
 
 input {
@@ -53,4 +54,15 @@ h2 {
 li {
   list-style: none;
   line-height: 1;
+}
+
+.active {
+  color: black;
+  cursor: default;
+  line-height: 5px;
+}
+
+.active:hover {
+  color: black;
+  text-decoration: none;
 }
