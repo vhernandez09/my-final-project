@@ -103,6 +103,8 @@ function getResults(event) {
   let input = document.querySelector("#city-input");
   let searchCity = `${input.value}`;
   cityHeader.innerHTML = `${input.value}`;
+  let tempHeader = document.querySelector("h2");
+  tempHeader.innerHTML = null;
   let apiKey = "bddb40bf6d4e87c1095eea2ffea7c540";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=${apiKey}&units=imperial`;
   axios.get(`${apiUrl}`).then(showTemperature);
