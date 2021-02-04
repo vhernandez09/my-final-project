@@ -58,16 +58,16 @@ currentDate.innerHTML = `Last updated: ${day} ${month} ${date}, ${year} ${hour}:
 
 function showTemperature(response) {
   let cityHeader = document.querySelector("h3");
+  cityHeader.innerHTML = `${response.data.name}`;
+
 
   fahrenheitTemperature = response.data.main.temp
   fahrenheitRealFeel = response.data.main.feels_like
+  currentCity = response.data.name
 
-  cityHeader.innerHTML = `${response.data.name}`;
   let temp = `${Math.round(fahrenheitTemperature)}`;
   let tempHeader = document.querySelector("h2");
   tempHeader.innerHTML = `${temp}°F`;
-
-  
 
   let realFeel = `${Math.round(response.data.main.feels_like)}`;
   let feelsLike = document.querySelector("h5");
@@ -99,8 +99,10 @@ currentButton.addEventListener("click", getLocation);
 
 function getResults(event) {
   event.preventDefault();
+  let cityHeader = document.querySelector("h3");
   let input = document.querySelector("#city-input");
   let searchCity = `${input.value}`;
+  cityHeader.innerHTML = `${input.value}`;
   let apiKey = "bddb40bf6d4e87c1095eea2ffea7c540";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=${apiKey}&units=imperial`;
   axios.get(`${apiUrl}`).then(showTemperature);
@@ -139,3 +141,5 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+showTemperature("Seoul");
